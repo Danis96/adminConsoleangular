@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .slika{
+      height:85.7vh;
+      width: 100%;
+  }
+  .centered {
+    position: absolute;
+    font-size: 25px;
+    background-color: #4cb6e8;
+    opacity: 0.9;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
