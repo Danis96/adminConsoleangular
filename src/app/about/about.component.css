@@ -1,0 +1,51 @@
+
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pimg1{
+    background-image: url("../../assets/about.jpg");
+    min-height: 400px;
+}
+.pimg2{
+    background-image: url("../../assets/bgimg.jpg");
+    min-height: 400px;
+}
+.pimg3{
+    background-image: url("../../assets/bgimg.jpg");
+    min-height: 400px;
+}
+.ptext{
+    /* prve tri stavke centriraju tekst na slici ( position: absolute, top:50% , width: 100%) */
+    top: 50%;
+    width: 100%;
+    position: absolute;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    text-align: center;
+    
+}
+.border{
+    opacity: 0.9;
+    padding: 20px;
+    color: black;
+}
+.border2{
+    cursor: pointer;
+    background-color: #89a7b4;
+    opacity: 0.9;
+    padding: 20px;
+    color: black;
+    border:2px solid rgb(0, 0, 0);
+}
+.section{
+    background-color: rgb(194, 209, 207);
+    color: black;
+    text-align: center;
+    padding: 30px;
+}
