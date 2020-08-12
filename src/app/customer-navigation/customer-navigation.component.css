@@ -1,8 +1,28 @@
 .customer-navigation {
     list-style-type: none;
+    
 }
 
 .customer-icon {
     margin-right: 5px;
     margin-bottom: 3px;
+}
+
+.customer-headline {
+    display: flex;
+    flex-direction: row;
+}
+
+.customer-headline-image {
+    width: 100px;
+    padding-inline-start: 60px;
+}
+
+.customer-navigation {
+    justify-content: start;
+}
+
+.customer-headline-text {
+    margin-top: 50px;
+    margin-left: 20px;
 }
