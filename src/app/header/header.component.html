@@ -2,12 +2,14 @@
     <mat-toolbar>
         <div class="left-side">
             <img class="users" src="assets/svg/multiple-users.svg">
+           <a mat-button routerLink='/'>
             <span>Customer Manager</span>
+           </a> 
         </div>
         <div class="linkovi">
             <!-- Ubaciti ovo u listu -->
             <ul class="lista">
-                <li><a>Customers</a><a href="#">Orders</a><a href="#">About</a></li>
+                <li><a mat-button routerLink='/customers' routerLinkActive="router-link-active" >Customers</a><a mat-button routerLink='/about'>About</a></li>
             </ul>
         </div>
     </mat-toolbar>
