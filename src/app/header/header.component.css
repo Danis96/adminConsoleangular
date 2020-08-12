@@ -1,0 +1,39 @@
+.toolbarParent {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+mat-toolbar {
+    background-color: #4cb6e8;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.left-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.users {
+    height: 50px;
+    width: 50px;
+}
+
+.lista a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.linkovi .lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    white-space: nowrap;
+}

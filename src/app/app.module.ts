@@ -1,3 +1,9 @@
+
+
+import { AppComponent } from "./app.component";
+import { HeaderComponent } from "./header/header.component";
+import { NoopAnimationsModule } from "@angular/platform-browser/animations";
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+
 import { CardComponent } from './card/card.component';
 
 import {HeaderComponent} from './header/header.component';
@@ -18,6 +25,7 @@ import { CustomerNavigationComponent } from './customer-navigation/customer-navi
 // import { AppRouting } from './app-routing.module';
 
 @NgModule({
+
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -26,6 +34,7 @@ import { CustomerNavigationComponent } from './customer-navigation/customer-navi
 
     CustomerNavigationComponent,
   ],
+
   imports: [
     BrowserModule,
     // AppRouting,
@@ -37,6 +46,6 @@ import { CustomerNavigationComponent } from './customer-navigation/customer-navi
     MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
