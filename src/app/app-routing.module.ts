@@ -1,33 +1,28 @@
 import { NgModule } from "@angular/core";
 import {RouterModule, Routes} from '@angular/router';
 import { CustomerNavigationComponent } from "./customer/customer-navigation/customer-navigation.component";
+import { HomeComponent } from "./home/home.component";
+import { AboutComponent } from "./about/about.component";
+import { NewCustomerComponent } from "./customer/new-customer/new-customer.component";
 
 
 const routes: Routes = [
   {
       /// home
-      path: '' , component: CustomerNavigationComponent
+      path: '' , component: HomeComponent
   },
   {
       /// customers
-      path: '/customers', component: CustomerNavigationComponent
+      path: 'customers', component: CustomerNavigationComponent
   },
   {
       /// about 
-      path: '/about', component: CustomerNavigationComponent
+      path: 'about', component: AboutComponent
   }, 
   {
     /// new customer 
-    path: '/customers/newcustomer', component: CustomerNavigationComponent
+    path: 'customers/newcustomer', component: NewCustomerComponent
  },
- {
-    /// card view  
-    path: '/customer/cardview', component: CustomerNavigationComponent
-},
-{
-    /// list view 
-    path: '/customer/listview', component: CustomerNavigationComponent
-}
 ]
 
 
@@ -37,4 +32,4 @@ const routes: Routes = [
     ],
     exports: [RouterModule]
 })
-export class AppRouting {}
+export class AppRoutingModule {}
