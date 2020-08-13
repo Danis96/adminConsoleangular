@@ -1,4 +1,4 @@
-<div class="card-body">
+<div class="card-body" *ngIf="listaCustomera.length > 0">
     <mat-card class="example-card" *ngFor="let customer of listaCustomera">
         <mat-card-header>
           <mat-card-title>{{customer.title}}</mat-card-title>
@@ -8,4 +8,7 @@
             <div class="card-details"><p>{{customer.city}}</p><a href="#">View Orders</a></div>
         </div>
       </mat-card>
+</div>
+<div *ngIf="listaCustomera.length <= 0" class="no-customers">
+  <p>There is no active customers at the moment</p>
 </div>
