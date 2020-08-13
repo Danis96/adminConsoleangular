@@ -4,6 +4,7 @@ import { CustomerNavigationComponent } from "./customer/customer-navigation/cust
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { NewCustomerComponent } from "./customer/new-customer/new-customer.component";
+import { CustomerComponent } from "./customer/customer.component";
 
 
 const routes: Routes = [
@@ -13,7 +14,7 @@ const routes: Routes = [
   },
   {
       /// customers
-      path: 'customers', component: CustomerNavigationComponent
+      path: 'customers', component: CustomerComponent
   },
   {
       /// about 

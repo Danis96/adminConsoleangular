@@ -54,3 +54,9 @@
   .card-details a{
       font-size: 12px;
   }
+
+  .no-customers {
+      display: flex;
+      justify-content: start;
+      margin-left: 60px;
+  }
