@@ -1,1 +1,13 @@
-<p>new-customer works!</p>
+<mat-card>
+    <form (submit)='onSaveCustomer(customerForm)' #customerForm='ngForm'>
+        <mat-form-field appearance="fill">
+            <input type="text" matInput name='name' ngModel required placeholder="Customer name">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input type="text" matInput name="city" ngModel required placeholder="Your City">
+        </mat-form-field>
+            <input type="radio" value="male" name="gender" ngModel required #gender="ngModel"> Male
+            <input type="radio" value="female" name="gender" ngModel required #gender="ngModel"> Female
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+</mat-card>

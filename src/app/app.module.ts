@@ -14,6 +14,10 @@ import { HomeComponent } from './home/home.component';
 import { CustomerComponent } from './customer/customer.component';
 import { NewCustomerComponent } from './customer/new-customer/new-customer.component';
 import { AppRoutingModule } from './app-routing.module';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule} from '@angular/forms';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
 
@@ -31,12 +35,16 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     NoopAnimationsModule,
     MatToolbarModule,
     NoopAnimationsModule,
     MatCardModule,
     MatIconModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatRadioModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
